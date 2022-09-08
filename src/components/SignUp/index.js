@@ -22,9 +22,9 @@ const validationSchema = yup.object({
 const SignUp = () => {
     const formik = useFormik({
         initialValues: {
-            fullName: 'Harry Potter',
-            email: 'foobar@example.com',
-            password: 'foobar',
+            fullName: '',
+            email: '',
+            password: '',
         },
         validationSchema: validationSchema,
         onSubmit: (values) => {
